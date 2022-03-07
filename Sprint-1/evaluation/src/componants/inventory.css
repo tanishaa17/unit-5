@@ -1,0 +1,16 @@
+.App{
+    border: 2px solid;
+    width: 40%;
+    margin: auto;
+}
+.inv{    
+    text-align: justify;
+}
+span{
+    float: left;
+    margin-left: 10%;
+}
+button{
+    margin-left: 10px;
+    margin-right: 20px;
+}
