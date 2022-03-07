@@ -6,10 +6,10 @@ export function Inventory(props) {
     const [notebook, setNotebook] = useState(props.notebooks);
     const [inkpen, setInkpen] = useState(props.inkpens);
     const addBook = () => {
-        setBook(book + 1);
+        setBook(books + 1);
     }
     const remBook = () => {
-        setBook(book - 1)
+        setBook(books - 1)
     }
 
     const addPen = () => {
@@ -38,7 +38,7 @@ export function Inventory(props) {
                 <span>Books :</span>
                 <button onClick={() => addBook(1)} className="addBook">+</button>
                 <button onClick={() => remBook(1)} className="remBook">-</button>
-                <span className="totalBooks">{book}</span>
+                <span className="totalBooks">{books}</span>
                 <br />
             </>
 
