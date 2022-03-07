@@ -1,12 +1,36 @@
 import { useState } from "react";
 import "./inventory.css"
-export function inventory(props) {
-    const [book, setBook] = useState(props.book);
+export function Inventory(props) {
+    const [books, setBook] = useState(props.books);
+    const [pen, setPen] = useState(props.pens);
+    const [notebook, setNotebook] = useState(props.notebooks);
+    const [inkpen, setInkpen] = useState(props.inkpens);
     const addBook = () => {
         setBook(book + 1);
     }
     const remBook = () => {
         setBook(book - 1)
+    }
+
+    const addPen = () => {
+        setPen(pen + 1);
+    }
+    const remPen = () => {
+        setPen(pen - 1)
+    }
+
+    const addNotebook = () => {
+        setNotebook(notebook + 1);
+    }
+    const remNotebook = () => {
+        setNotebook(notebook - 1)
+    }
+
+    const addInkpen = () => {
+        setInkpen(inkpen + 1);
+    }
+    const remInkpen = () => {
+        setInkpen(inkpen - 1)
     }
     return (
         <div className="items">
